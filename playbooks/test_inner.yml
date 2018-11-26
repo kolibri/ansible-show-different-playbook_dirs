@@ -2,3 +2,8 @@
 - hosts: all
   pre_tasks:
     - debug: var=playbook_dir
+  tasks:
+    - name: test from outer playbook
+      copy:
+        src: "{{ test_src }}"
+        dest: /tmp/some.file.outer

@@ -1,2 +1,2 @@
 default:
-	ansible-playbook test_outer.yml -i localhost, -c local
+	ansible-playbook -i localhost, -c local -e 'test_src=some.file' test_outer.yml 
