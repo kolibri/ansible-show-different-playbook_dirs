@@ -1,0 +1,6 @@
+---
+- hosts: all
+  pre_tasks:
+    - debug: var=playbook_dir
+
+- import_playbook: playbooks/test_inner.yml

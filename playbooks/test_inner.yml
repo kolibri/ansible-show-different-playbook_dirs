@@ -1,0 +1,4 @@
+---
+- hosts: all
+  pre_tasks:
+    - debug: var=playbook_dir
